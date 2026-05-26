@@ -1,0 +1,10 @@
+
+# env
+.env
+
+# deps & build
+node_modules
+dist
+
+# rag data (course transcripts — out of repo)
+src/rag/data/

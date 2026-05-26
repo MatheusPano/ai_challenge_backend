@@ -1,0 +1,147 @@
+[Tue May 26 18:46:22 -03 2026] starting rag ingest (log: logs/rag-ingest-20260526-184622.log, max_retries=5, retry_delay=300s)
+[Tue May 26 18:46:22 -03 2026] attempt 1/5
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[NestFactory] [39m[32mStarting Nest application...[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +11ms[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigHostModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mAppModule dependencies initialized[39m[38;5;3m +1ms[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mConfigModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mCefisModule dependencies initialized[39m[38;5;3m +58ms[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmCoreModule dependencies initialized[39m[38;5;3m +48ms[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mRagModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mQuizModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmCoreModule dependencies initialized[39m[38;5;3m +32ms[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mTypeOrmModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mProfileModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mEventsModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[InstanceLoader] [39m[32mPlanModule dependencies initialized[39m[38;5;3m +0ms[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[RagModule] [39m[32mpgvector schema ready[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:24 PM [32m    LOG[39m [38;5;3m[IngestCLI] [39m[32mRunning with opts: {}[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:25 PM [32m    LOG[39m [38;5;3m[IngestService] [39m[32mIngest start — 475 course(s) to process (skipped 1 already ingested)[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:25 PM [32m    LOG[39m [38;5;3m[IngestService] [39m[32mcourse 1845 "Patrimônio líquido" — 1 lessons, 3 chunks[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:26 PM [32m    LOG[39m [38;5;3m[IngestService] [39m[32mcourse 1969 "Montessori: uma filosofia para a vida" — 1 lessons, 5 chunks[39m
+[32m[Nest] 15903  - [39m05/26/2026, 6:46:35 PM [32m    LOG[39m [38;5;3m[IngestService] [39m[32mcourse 2197 "DCTFWEB na prática" — 16 lessons, 40 chunks[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:43 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:43 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:43 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:44 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:45 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:45 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:45 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:45 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:46 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:46 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:46 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:46 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:47 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:47 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:47 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:47 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:48 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:48 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:48 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:48 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:49 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:49 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:49 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:49 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:50 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:50 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:50 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:51 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:51 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
+[31m[Nest] 15903  - [39m05/26/2026, 6:46:54 PM [31m  ERROR[39m [38;5;3m[EmbeddingsService] [39m[31membeddings 429: {
+  "error": {
+    "code": 429,
+    "message": "You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage — giving up[39m
