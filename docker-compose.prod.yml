@@ -1,0 +1,69 @@
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: ai_challenge_mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_ROOT_PASSWORD}
+      MYSQL_DATABASE: ${DB_NAME}
+      MYSQL_USER: ${DB_USER}
+      MYSQL_PASSWORD: ${DB_PASSWORD}
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost", "-uroot", "-p$$MYSQL_ROOT_PASSWORD"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  pgvector:
+    image: pgvector/pgvector:pg16
+    container_name: ai_challenge_pgvector
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: ${RAG_DB_USER}
+      POSTGRES_PASSWORD: ${RAG_DB_PASSWORD}
+      POSTGRES_DB: ${RAG_DB_NAME}
+    volumes:
+      - pgvector_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${RAG_DB_USER} -d ${RAG_DB_NAME}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ai_challenge_backend
+    restart: unless-stopped
+    depends_on:
+      mysql:
+        condition: service_healthy
+      pgvector:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:4000:4000"
+    environment:
+      NODE_ENV: production
+      DB_HOST: mysql
+      DB_PORT: 3306
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_NAME: ${DB_NAME}
+      RAG_DB_HOST: pgvector
+      RAG_DB_PORT: 5432
+      RAG_DB_USER: ${RAG_DB_USER}
+      RAG_DB_PASSWORD: ${RAG_DB_PASSWORD}
+      RAG_DB_NAME: ${RAG_DB_NAME}
+      GEMINI_API_KEY: ${GEMINI_API_KEY}
+      GEMINI_EMBEDDING_MODEL: ${GEMINI_EMBEDDING_MODEL:-text-embedding-004}
+      GEMINI_EMBEDDING_DIMS: ${GEMINI_EMBEDDING_DIMS:-768}
+      LLM_PROVIDER: ${LLM_PROVIDER:-gemini}
+      CORS_ORIGIN: ${CORS_ORIGIN}
+      PORT: 4000
+
+volumes:
+  mysql_data:
+  pgvector_data:
