@@ -511,8 +511,35 @@ Regras:
     return {
       generatedAt: new Date().toISOString(),
       level: profile.level ?? 'iniciante',
-      stops,
+      stops: this.dedupeStops(stops),
       styleWeights: style,
     };
+  }
+
+  /**
+   * Removes topic stops that point to a course already covered by an earlier
+   * stop. Review stops are kept as-is. Stop ids are reindexed so the IDs
+   * stay sequential after removal.
+   */
+  private dedupeStops(stops: Stop[]): Stop[] {
+    const seenCourseIds = new Set<number>();
+    const seenTopics = new Set<string>();
+    const kept: Stop[] = [];
+    for (const s of stops) {
+      if (s.kind === 'topic') {
+        const courseId = s.formats.find((f) => f.kind === 'video')?.courseId;
+        const topicKey = s.topic.trim().toLowerCase();
+        if (courseId !== undefined && seenCourseIds.has(courseId)) continue;
+        if (seenTopics.has(topicKey)) continue;
+        if (courseId !== undefined) seenCourseIds.add(courseId);
+        seenTopics.add(topicKey);
+      }
+      kept.push(s);
+    }
+    // Reindex topic stop ids; review stops keep their original id pattern
+    // so reviewsStopIds references (if any) don't need rewriting here.
+    return kept.map((s, i) =>
+      s.kind === 'topic' ? { ...s, id: `s-${i}` } : s,
+    );
   }
 }
