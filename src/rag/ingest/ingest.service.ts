@@ -41,7 +41,8 @@ interface LessonDetailsJson {
 
 const SUBTITLE_CANDIDATES = ['subtitle_pt-BR.vtt', 'subtitle_pt.vtt'];
 const EMBED_BATCH_SIZE = 50;
-const EMBED_BATCH_DELAY_MS = 250;
+const EMBED_BATCH_DELAY_MS = 1000;
+const EMBED_LESSON_DELAY_MS = 1000;
 
 function sleep(ms: number): Promise<void> {
   return new Promise((res) => setTimeout(res, ms));
@@ -196,7 +197,11 @@ export class IngestService {
     let chunksInserted = 0;
     let embeddingsFailed = 0;
 
-    for (const { dir, vttPath } of lessonsWithTranscript) {
+    for (let lessonIdx = 0; lessonIdx < lessonsWithTranscript.length; lessonIdx++) {
+      const { dir, vttPath } = lessonsWithTranscript[lessonIdx];
+      if (lessonIdx > 0) {
+        await sleep(EMBED_LESSON_DELAY_MS);
+      }
       const lessonDetailsPath = join(lessonsDir, dir, 'details.json');
       const lessonRaw = await fs.readFile(lessonDetailsPath, 'utf8');
       const lesson = JSON.parse(lessonRaw) as LessonDetailsJson;
